@@ -8,7 +8,7 @@ public class City {
     private Integer id;
 
 
-    public City(String name, Integer id){
+    public City( Integer id, String name){
         this.id = id;
         this.name = name;
     }

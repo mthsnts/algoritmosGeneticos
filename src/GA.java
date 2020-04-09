@@ -25,17 +25,7 @@ public class GA {
     public static void main(String[] args) {
         int generations = 1;
         Integer unchangedGenerations = 0;
-        switch (Menu.menu()) {
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-        }
-
+        generatePopulation();
         fillDistances();
         newIndividuals(10, cities.get(0));
 
@@ -59,6 +49,19 @@ public class GA {
         return cities.stream().filter(c -> c.getId().equals(id)).findFirst().get();
     }
 
+    private static void generatePopulation() {
+        cities.add(new City(generateId(), "Florianopolis"));
+        cities.add(new City(generateId(), "Laguna"));
+        cities.add(new City(generateId(), "Criciúma"));
+        cities.add(new City(generateId(), "Tubarão"));
+        cities.add(new City(generateId(), "Capivaria de baixo"));
+        cities.add(new City(generateId(), "Jaguaruna"));
+        cities.add(new City(generateId(), "Imbituba"));
+        cities.add(new City(generateId(), "Sangão"));
+        cities.add(new City(generateId(), "Joinville"));
+        cities.add(new City(generateId(), "Gravatal"));
+    }
+    
 
     /**
      *
