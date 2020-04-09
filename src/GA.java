@@ -86,6 +86,7 @@ public class GA {
 
 
     private static void fillDistances() {
+        System.out.println("----------DISTANCIA ENTRE AS CIDADES------------------");
         distancesList = new Integer[cities.size()][cities.size()];
 
         for (int i = 0; i < cities.size(); i++) {
@@ -99,12 +100,6 @@ public class GA {
                 }
             }
         }
-            showDistances();
-    }
-
-
-
-    private static void showDistances() {
         for (int i = 0; i < cities.size(); i++) {
             String result = "";
 
@@ -114,7 +109,7 @@ public class GA {
             System.out.println(result);
         }
     }
-    
+
 
 
 
